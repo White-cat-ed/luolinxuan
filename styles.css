@@ -247,8 +247,7 @@ strong {
   font-size: 13.5px !important;
 }
 
-.section-note,
-.access-note {
+.section-note {
   margin: -7px 0 15px;
   color: var(--muted);
   font-size: 12.2px;
@@ -282,6 +281,99 @@ strong {
   color: #555d62;
   font-size: 14.2px;
   line-height: 1.65;
+}
+
+.research-tracks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.research-track {
+  padding: 14px 15px;
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: #fbfcfd;
+}
+
+.research-track h3 {
+  margin: 3px 0 6px;
+  color: var(--heading);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.research-track p {
+  margin: 0;
+  color: #626c72;
+  font-size: 12.3px;
+  line-height: 1.55;
+}
+
+.track-kicker {
+  color: #6f8ba0 !important;
+  font-size: 11px !important;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.track-merge {
+  margin: 0 0 17px;
+  padding: 10px 13px;
+  border-left: 2px solid #89a1b2;
+  background: #f6f8f9;
+  color: #596369;
+  font-size: 12.7px;
+  line-height: 1.55;
+}
+
+.undergraduate-research {
+  margin-top: 22px;
+  padding: 17px 18px;
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: #fbfcfd;
+}
+
+.undergraduate-research h3 {
+  margin: 3px 0 8px;
+  color: var(--heading);
+  font-size: 15.5px;
+  line-height: 1.4;
+}
+
+.undergraduate-research > p:not(.subsection-kicker) {
+  margin: 5px 0;
+  font-size: 13.2px;
+  line-height: 1.58;
+}
+
+.subsection-kicker {
+  margin: 0;
+  color: #6f8ba0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 11px;
+}
+
+.skill-tags span {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #edf2f5;
+  color: #52616b;
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1.35;
 }
 
 .research-roadmap {
@@ -487,10 +579,6 @@ details p {
   background: var(--quiet);
   color: #5b6368;
   line-height: 1.62;
-}
-
-.access-note {
-  margin-top: 12px;
 }
 
 .patent {
@@ -721,6 +809,10 @@ details p {
   .research-item {
     grid-template-columns: 30px minmax(0, 1fr);
     gap: 10px;
+  }
+
+  .research-tracks {
+    grid-template-columns: 1fr;
   }
 
   .publication {

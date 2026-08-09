@@ -28,9 +28,9 @@
       <nav class="site-nav" aria-label="主导航">
         <a href="#about">关于我</a>
         <a href="#news">动态</a>
-        <a href="#research">研究</a>
         <a href="#publications">论文</a>
         <a href="#patents">专利</a>
+        <a href="#research">研究</a>
         <a href="#education">教育经历</a>
         <a href="#awards">荣誉</a>
         <a class="language-link" href="index.html" lang="en">English</a>
@@ -73,67 +73,6 @@
           <li><time datetime="2025-10">2025.10</time><span>获得<strong>研究生国家奖学金</strong>，为年级唯一获奖者。</span></li>
           <li><time datetime="2025-04">2025.04</time><span><strong>Prompt-UIE</strong> 发表于 ICASSP 2025。</span></li>
         </ul>
-      </section>
-
-      <section id="research" class="section">
-        <h2>研究主线</h2>
-        <p class="research-lead">我的硕士研究围绕一个连贯目标展开：<strong>通用开放水下感知</strong>。我将其分解为环境开放与类别开放两条主线，逐级解决关键问题，并进一步探索环境与类别的统一建模。</p>
-
-        <div class="research-roadmap">
-          <article class="research-item">
-            <div class="stage-marker">01</div>
-            <div class="research-copy">
-              <p class="stage-label">基础稳健感知 · 2024–2025</p>
-              <h3>Prompt-UIE 与 WCPM</h3>
-              <p>从轻量视觉 Prompt 跨水域增强出发，进一步通过频率—尺度耦合学习构建面向检测任务的轻量水下特征。</p>
-              <p class="research-result">Prompt-UIE 仅需<strong> 0.88M 可训练参数</strong>；WCPM 在 DUO 上达到 <strong>69.9 AP</strong>，模型规模为 9.854M。</p>
-            </div>
-          </article>
-
-          <article class="research-item">
-            <div class="stage-marker">02</div>
-            <div class="research-copy">
-              <p class="stage-label">物理引导域泛化 · 2024–2025</p>
-              <h3>Hy-UOD</h3>
-              <p>以背景光和透射图表征水域光学状态，通过超网络与多频动态适配生成随水体条件变化的检测参数。</p>
-              <p class="research-result">第一作者发表于 <strong>ACM MM 2025 Oral</strong>。</p>
-            </div>
-          </article>
-
-          <article class="research-item">
-            <div class="stage-marker">03</div>
-            <div class="research-copy">
-              <p class="stage-label">通用域泛化 · 2025–至今</p>
-              <h3>Hy-GUOD</h3>
-              <p>面向稀疏单源监督，通过物理一致域演化、光学状态逆估计、检测器动态调制和冲突感知双层优化提升未知环境泛化能力。</p>
-              <p class="research-result">第一作者论文待投。</p>
-            </div>
-          </article>
-
-          <article class="research-item">
-            <div class="stage-marker">04</div>
-            <div class="research-copy">
-              <p class="stage-label">细粒度开放基准 · 2025–2026</p>
-              <h3>OpenAqua</h3>
-              <p>围绕五级生物分类体系，建立目标检测、实例分割和开放词汇检测协议，面向真实水生生物多样性感知。</p>
-              <p class="research-result"><strong>77,970 张图像 · 16,540 个物种 · 132,885 个实例</strong>；第一作者发表于 KDD 2026。</p>
-            </div>
-          </article>
-
-          <article class="research-item research-item-current">
-            <div class="stage-marker">05</div>
-            <div class="research-copy">
-              <p class="stage-label">环境—类别统一建模 · 在研</p>
-              <h3>通用开放水下多模态智能体</h3>
-              <p>探索同时表征光学状态与层级类别知识的物理—语义世界模型，通过 Agent 推理应对未知水体与未知目标同时出现的开放场景。</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="method-band">
-          <p><strong>方法基础：</strong>物理引导学习、域/通用泛化、开放词汇检测、频域建模、视觉 Prompt、超网络与元学习。</p>
-          <p><strong>实验工具：</strong>PyTorch、MMDetection、Ultralytics、SAM 2，以及多数据集对比、消融、跨域评测与 Benchmark 构建。</p>
-        </div>
       </section>
 
       <section id="publications" class="section">
@@ -234,6 +173,91 @@
             <p>该方法结合空间通道注意力与语义流矫正，实现 RGB 和深度特征的对齐与融合，抑制多模态噪声，并改善深层语义信息向浅层的传递，从而提升 RGB-D 语义分割效果。</p>
           </details>
         </article>
+      </section>
+
+      <section id="research" class="section">
+        <h2>硕士研究主线</h2>
+        <p class="research-lead">我的硕士研究围绕一个连贯目标展开：<strong>通用开放水下感知</strong>。我将其分解为环境开放与类别开放两条主线，逐级解决关键问题，并进一步探索环境与类别的统一建模。</p>
+
+        <div class="research-tracks" aria-label="两条研究主线">
+          <article class="research-track">
+            <p class="track-kicker">主线一 · 环境开放</p>
+            <h3>基础稳健感知 → 域泛化 → 通用泛化</h3>
+            <p>Prompt-UIE 与 WCPM → Hy-UOD → Hy-GUOD</p>
+          </article>
+          <article class="research-track">
+            <p class="track-kicker">主线二 · 类别开放</p>
+            <h3>细粒度类别体系 → 开放词汇感知</h3>
+            <p>OpenAqua 数据集与综合基准</p>
+          </article>
+        </div>
+        <p class="track-merge"><strong>阶段五 · 双线汇合：</strong>以物理—语义世界模型和多模态 Agent 推理，统一建模环境开放与类别开放。</p>
+
+        <div class="research-roadmap">
+          <article class="research-item">
+            <div class="stage-marker">01</div>
+            <div class="research-copy">
+              <p class="stage-label">基础稳健感知 · 2024–2025</p>
+              <h3>Prompt-UIE 与 WCPM</h3>
+              <p>从轻量视觉 Prompt 跨水域增强出发，进一步通过频率—尺度耦合学习构建面向检测任务的轻量水下特征。</p>
+              <p class="research-result">Prompt-UIE 仅需<strong> 0.88M 可训练参数</strong>；WCPM 在 DUO 上达到 <strong>69.9 AP</strong>，模型规模为 9.854M。</p>
+            </div>
+          </article>
+
+          <article class="research-item">
+            <div class="stage-marker">02</div>
+            <div class="research-copy">
+              <p class="stage-label">物理引导域泛化 · 2024–2025</p>
+              <h3>Hy-UOD</h3>
+              <p>以背景光和透射图表征水域光学状态，通过超网络与多频动态适配生成随水体条件变化的检测参数。</p>
+              <p class="research-result">第一作者发表于 <strong>ACM MM 2025 Oral</strong>。</p>
+            </div>
+          </article>
+
+          <article class="research-item">
+            <div class="stage-marker">03</div>
+            <div class="research-copy">
+              <p class="stage-label">通用域泛化 · 2025–至今</p>
+              <h3>Hy-GUOD</h3>
+              <p>面向稀疏单源监督，通过物理一致域演化、光学状态逆估计、检测器动态调制和冲突感知双层优化提升未知环境泛化能力。</p>
+              <p class="research-result">第一作者论文待投。</p>
+            </div>
+          </article>
+
+          <article class="research-item">
+            <div class="stage-marker">04</div>
+            <div class="research-copy">
+              <p class="stage-label">细粒度开放基准 · 2025–2026</p>
+              <h3>OpenAqua</h3>
+              <p>围绕五级生物分类体系，建立目标检测、实例分割和开放词汇检测协议，面向真实水生生物多样性感知。</p>
+              <p class="research-result"><strong>77,970 张图像 · 16,540 个物种 · 132,885 个实例</strong>；第一作者发表于 KDD 2026。</p>
+            </div>
+          </article>
+
+          <article class="research-item research-item-current">
+            <div class="stage-marker">05</div>
+            <div class="research-copy">
+              <p class="stage-label">环境—类别统一建模 · 在研</p>
+              <h3>通用开放水下多模态智能体</h3>
+              <p>探索同时表征光学状态与层级类别知识的物理—语义世界模型，通过 Agent 推理应对未知水体与未知目标同时出现的开放场景。</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="method-band">
+          <p><strong>方法基础：</strong>物理引导学习、域泛化、开放词汇检测、频域建模、视觉 Prompt、超网络与元学习。</p>
+          <p><strong>实验工具：</strong>PyTorch、MMDetection、Ultralytics、SAM 2，以及多数据集对比、消融、跨域评测与 Benchmark 构建。</p>
+        </div>
+        <div class="undergraduate-research">
+          <p class="subsection-kicker">本科研究基础 · 2022.01–2023.02</p>
+          <h3>RGB-D 跨模态语义分割与空间感知</h3>
+          <p>本科期间开展 RGB-D 跨模态语义分割研究，探索 RGB 外观信息与深度空间信息的有效融合。</p>
+          <p class="research-result">相关成果形成优秀本科毕业论文和发明专利 CN117218348A。</p>
+          <div class="skill-tags" aria-label="RGB-D 研究技能">
+            <span>RGB-D 感知</span><span>HHA 深度编码</span><span>跨模态对齐</span><span>语义流校正</span><span>自适应融合</span><span>语义分割</span>
+          </div>
+        </div>
+
       </section>
 
       <section id="education" class="section compact-section">

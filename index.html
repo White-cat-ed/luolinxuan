@@ -43,9 +43,9 @@
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#news">News</a>
-        <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#patents">Patents</a>
+        <a href="#research">Research</a>
         <a href="#education">Education</a>
         <a href="#awards">Honors</a>
         <a class="language-link" href="zh.html" lang="zh-CN">中文</a>
@@ -88,67 +88,6 @@
           <li><time datetime="2025-10">Oct. 2025</time><span>Received the <strong>National Graduate Scholarship</strong> as the sole recipient in my cohort.</span></li>
           <li><time datetime="2025-04">Apr. 2025</time><span><strong>Prompt-UIE</strong> was published at ICASSP 2025.</span></li>
         </ul>
-      </section>
-
-      <section id="research" class="section">
-        <h2>Research</h2>
-        <p class="research-lead">My master’s research follows one coherent goal: <strong>generalized open underwater perception</strong>. I decompose it into environmental openness and category openness, address each challenge progressively, and then integrate the resulting capabilities.</p>
-
-        <div class="research-roadmap">
-          <article class="research-item">
-            <div class="stage-marker">01</div>
-            <div class="research-copy">
-              <p class="stage-label">Robust perception · 2024–2025</p>
-              <h3>Prompt-UIE &amp; WCPM</h3>
-              <p>Parameter-efficient visual prompting for cross-water enhancement, followed by frequency–scale coupled feature learning for lightweight underwater detection.</p>
-              <p class="research-result">Prompt-UIE uses only <strong>0.88M trainable parameters</strong>; WCPM reaches <strong>69.9 AP</strong> on DUO with 9.854M parameters.</p>
-            </div>
-          </article>
-
-          <article class="research-item">
-            <div class="stage-marker">02</div>
-            <div class="research-copy">
-              <p class="stage-label">Physics-guided domain generalization · 2024–2025</p>
-              <h3>Hy-UOD</h3>
-              <p>Models atmospheric light and transmission as complementary physical modalities, then uses a hypernetwork and multi-frequency adaptation to generate water-condition-aware detector parameters.</p>
-              <p class="research-result">First-author work published at <strong>ACM MM 2025 Oral</strong>.</p>
-            </div>
-          </article>
-
-          <article class="research-item">
-            <div class="stage-marker">03</div>
-            <div class="research-copy">
-              <p class="stage-label">Generalized domain generalization · 2025–present</p>
-              <h3>Hy-GUOD</h3>
-              <p>Extends robust perception to sparse single-source supervision through physics-consistent domain evolution, inverse optical-state estimation, dynamic detector modulation, and conflict-aware bilevel optimization.</p>
-              <p class="research-result">First-author manuscript in preparation.</p>
-            </div>
-          </article>
-
-          <article class="research-item">
-            <div class="stage-marker">04</div>
-            <div class="research-copy">
-              <p class="stage-label">Fine-grained open benchmark · 2025–2026</p>
-              <h3>OpenAqua</h3>
-              <p>A five-level biological taxonomy with detection, instance segmentation, and open-vocabulary protocols for real-world aquatic biodiversity perception.</p>
-              <p class="research-result"><strong>77,970 images · 16,540 species · 132,885 instances</strong>; first-author work published at KDD 2026.</p>
-            </div>
-          </article>
-
-          <article class="research-item research-item-current">
-            <div class="stage-marker">05</div>
-            <div class="research-copy">
-              <p class="stage-label">Unified environment–category modeling · Ongoing</p>
-              <h3>Generalized Open Underwater Multimodal Agent</h3>
-              <p>Exploring a physics–semantics world model that jointly represents optical states and hierarchical category knowledge, enabling agentic reasoning under simultaneous environmental and category openness.</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="method-band">
-          <p><strong>Methods:</strong> physics-guided learning, domain/generalized generalization, open-vocabulary detection, frequency modeling, visual prompting, hypernetworks, and meta-learning.</p>
-          <p><strong>Tools:</strong> PyTorch, MMDetection, Ultralytics, SAM 2, reproducible multi-dataset evaluation, ablation studies, and benchmark construction.</p>
-        </div>
       </section>
 
       <section id="publications" class="section">
@@ -249,6 +188,91 @@
             <p>This invention combines spatial-channel attention with semantic-flow correction to align and fuse RGB and depth features, suppress multimodal noise, and improve the propagation of deep semantic information for RGB-D semantic segmentation.</p>
           </details>
         </article>
+      </section>
+
+      <section id="research" class="section">
+        <h2>Master’s Research</h2>
+        <p class="research-lead">My master’s research follows one coherent goal: <strong>generalized open underwater perception</strong>. I decompose it into environmental openness and category openness, address each challenge progressively, and then integrate the resulting capabilities.</p>
+
+        <div class="research-tracks" aria-label="Two research tracks">
+          <article class="research-track">
+            <p class="track-kicker">Track I · Environmental Openness</p>
+            <h3>Robust perception → domain generalization → generalized domain generalization</h3>
+            <p>Prompt-UIE &amp; WCPM → Hy-UOD → Hy-GUOD</p>
+          </article>
+          <article class="research-track">
+            <p class="track-kicker">Track II · Category Openness</p>
+            <h3>Fine-grained taxonomy → open-vocabulary perception</h3>
+            <p>OpenAqua dataset and benchmark</p>
+          </article>
+        </div>
+        <p class="track-merge"><strong>Convergence · Stage 05:</strong> unifying environmental and category openness through a physics–semantics world model and multimodal agentic reasoning.</p>
+
+        <div class="research-roadmap">
+          <article class="research-item">
+            <div class="stage-marker">01</div>
+            <div class="research-copy">
+              <p class="stage-label">Robust perception · 2024–2025</p>
+              <h3>Prompt-UIE &amp; WCPM</h3>
+              <p>Parameter-efficient visual prompting for cross-water enhancement, followed by frequency–scale coupled feature learning for lightweight underwater detection.</p>
+              <p class="research-result">Prompt-UIE uses only <strong>0.88M trainable parameters</strong>; WCPM reaches <strong>69.9 AP</strong> on DUO with 9.854M parameters.</p>
+            </div>
+          </article>
+
+          <article class="research-item">
+            <div class="stage-marker">02</div>
+            <div class="research-copy">
+              <p class="stage-label">Physics-guided domain generalization · 2024–2025</p>
+              <h3>Hy-UOD</h3>
+              <p>Models atmospheric light and transmission as complementary physical modalities, then uses a hypernetwork and multi-frequency adaptation to generate water-condition-aware detector parameters.</p>
+              <p class="research-result">First-author work published at <strong>ACM MM 2025 Oral</strong>.</p>
+            </div>
+          </article>
+
+          <article class="research-item">
+            <div class="stage-marker">03</div>
+            <div class="research-copy">
+              <p class="stage-label">Generalized domain generalization · 2025–present</p>
+              <h3>Hy-GUOD</h3>
+              <p>Extends robust perception to sparse single-source supervision through physics-consistent domain evolution, inverse optical-state estimation, dynamic detector modulation, and conflict-aware bilevel optimization.</p>
+              <p class="research-result">First-author manuscript in preparation.</p>
+            </div>
+          </article>
+
+          <article class="research-item">
+            <div class="stage-marker">04</div>
+            <div class="research-copy">
+              <p class="stage-label">Fine-grained open benchmark · 2025–2026</p>
+              <h3>OpenAqua</h3>
+              <p>A five-level biological taxonomy with detection, instance segmentation, and open-vocabulary protocols for real-world aquatic biodiversity perception.</p>
+              <p class="research-result"><strong>77,970 images · 16,540 species · 132,885 instances</strong>; first-author work published at KDD 2026.</p>
+            </div>
+          </article>
+
+          <article class="research-item research-item-current">
+            <div class="stage-marker">05</div>
+            <div class="research-copy">
+              <p class="stage-label">Unified environment–category modeling · Ongoing</p>
+              <h3>Generalized Open Underwater Multimodal Agent</h3>
+              <p>Exploring a physics–semantics world model that jointly represents optical states and hierarchical category knowledge, enabling agentic reasoning under simultaneous environmental and category openness.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="method-band">
+          <p><strong>Methods:</strong> physics-guided learning, domain generalization, open-vocabulary detection, frequency modeling, visual prompting, hypernetworks, and meta-learning.</p>
+          <p><strong>Tools:</strong> PyTorch, MMDetection, Ultralytics, SAM 2, reproducible multi-dataset evaluation, ablation studies, and benchmark construction.</p>
+        </div>
+        <div class="undergraduate-research">
+          <p class="subsection-kicker">Undergraduate Research · 2022–2023</p>
+          <h3>RGB-D Cross-Modal Semantic Segmentation and Spatial Perception</h3>
+          <p>During my undergraduate studies, I explored RGB-D cross-modal semantic segmentation by integrating appearance and depth cues.</p>
+          <p class="research-result">This work resulted in an outstanding undergraduate thesis and invention patent CN117218348A.</p>
+          <div class="skill-tags" aria-label="RGB-D research skills">
+            <span>RGB-D Perception</span><span>HHA Encoding</span><span>Cross-Modal Alignment</span><span>Semantic Flow</span><span>Adaptive Fusion</span><span>Semantic Segmentation</span>
+          </div>
+        </div>
+
       </section>
 
       <section id="education" class="section compact-section">
