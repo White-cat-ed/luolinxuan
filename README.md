@@ -16,4 +16,4 @@ Minimal bilingual academic homepage for `https://white-cat-ed.github.io/`.
 4. Under **Build and deployment**, select **Deploy from a branch**, then choose `main` and `/ (root)`.
 5. Save and wait for `https://white-cat-ed.github.io/` to become available.
 
-The CV links currently open an email draft to `211124120023@zjut.edu.cn`; no private manuscript or CV file is bundled in the website. 
+The CV links currently open an email draft to `whitecat.llx@gmail.com`; no private manuscript or CV file is bundled in the website.
